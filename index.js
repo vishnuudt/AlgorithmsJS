@@ -1,7 +1,8 @@
 const hanoi = require("./towerofHanoi.js");
 const robot = require("./robotMove");
 const subset = require("./subsets");
-const permute = require("./permutations")
+const permute = require("./permutations");
+const parans = require("./parans");
 
 // robot.moveRobot(4,4);
 // robot.printIt();
@@ -10,3 +11,5 @@ const permute = require("./permutations")
 // console.log(subsetObj.genSubset());
 // let obj = new permute.Permute();
 // console.log(obj.genPermute("abc"));
+let paranObj = new parans.ParansMatcher();
+paranObj.genParanMatches(3, 3, "      ".split(''), 0);
