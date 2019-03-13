@@ -4,6 +4,7 @@ const subset = require("./subsets");
 const permute = require("./permutations");
 const parans = require("./parans");
 const edit = require("./editDistance");
+const merge = require("./mergeSort");
 
 // robot.moveRobot(4,4);
 // robot.printIt();
@@ -14,4 +15,5 @@ const edit = require("./editDistance");
 // console.log(obj.genPermute("abc"));
 // let paranObj = new parans.ParansMatcher();
 // paranObj.genParanMatches(3, 3, "      ".split(''), 0);
-let editItem = new edit.editDistance("cat", 1);
+// let editItem = new edit.editDistance("cat", 1);
+let merge1 = new merge.MergeSort([4,5,6,7]);
