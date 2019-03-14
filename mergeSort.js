@@ -13,8 +13,8 @@ class MergeSort{
     }
 
     helpSort(listItems, auxillaryList, lo, hi){
-        if (hi < lo) return;
-        let mid = lo + (hi - lo) / 2;
+        if (hi <= lo) return;
+        let mid = Math.floor(lo + (hi - lo) / 2);
         this.helpSort(listItems, auxillaryList, lo, mid);
         this.helpSort(listItems, auxillaryList, mid+1, hi);
         this.helpMerge(listItems, auxillaryList, lo, mid, hi);
@@ -23,7 +23,7 @@ class MergeSort{
     helpMerge(listItems, auxillaryList, lo, mid, hi){
 
         // copy over the items
-        for (let k = lo; k < hi ; k++){
+        for (let k = lo; k <= hi ; k++){
             auxillaryList[k] = listItems[k];
         }
         
