@@ -5,6 +5,8 @@ const permute = require("./permutations");
 const parans = require("./parans");
 const edit = require("./editDistance");
 const merge = require("./mergeSort");
+const R = require("ramda");
+const Varsh = require("./Varshini_works");
 
 // robot.moveRobot(4,4);
 // robot.printIt();
@@ -16,4 +18,9 @@ const merge = require("./mergeSort");
 // let paranObj = new parans.ParansMatcher();
 // paranObj.genParanMatches(3, 3, "      ".split(''), 0);
 // let editItem = new edit.editDistance("cat", 1);
-let merge1 = new merge.MergeSort([4,5,6,7]);
+// let merge1 = new merge.MergeSort([4,5,6,7]);
+
+Varsh.VarshiniWork();
+
+
+
